@@ -1,0 +1,26 @@
+{
+  "Time": "seconds:1660576075",
+  "Location": {
+    "Latitude": "32.600240",
+    "Longitude": "-106.753600"
+  },
+  "Tower": "192.168.103.1",
+  "SensorType": "internal_conditions",
+  "Measurement": [
+    {
+      "Name": "temperature",
+      "Value": "89.780000",
+      "Measurement": "-"
+    },
+    {
+      "Name": "humidity",
+      "Value": "45.100000",
+      "Measurement": "-"
+    },
+    {
+      "Name": "power_consumption",
+      "Value": "1.562500",
+      "Measurement": "-"
+    }
+  ]
+}
