@@ -12,18 +12,17 @@ type Message struct {
 }
 
 func main() {
-	var message []Message
-	Data := []byte(`
-	[
-		{"Tower": "Japan", "Temperature": "Tokyo", "Time": "Asia"},
-	]`)
+	var message Message
+	Data := []byte(`{
+		"Tower": "Japan",
+		"Temperature": "Tokyo",
+		"Time": "Asia"
+	}`)
 
 	err := json.Unmarshal(Data, &message)
 	if err != nil {
 		fmt.Println(err)
 	}
 
-	for i := range message {
-		fmt.Println(message[i].Temperature)
-	}
+	fmt.Println(message.Temperature)
 }
