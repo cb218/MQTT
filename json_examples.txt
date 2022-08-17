@@ -25,8 +25,6 @@
   ]
 }
 
-,
-
 {
   "Time": "seconds:1660576075",
   "Location": {
@@ -43,6 +41,7 @@
     }
   ]
 }
+
 {
   "Time": "seconds:1660576065",
   "Location": {
@@ -94,6 +93,7 @@
     }
   ]
 }
+
 {
   "Time": "seconds:1660576076",
   "Location": {
@@ -115,6 +115,7 @@
     }
   ]
 }
+
 {
   "Time": "seconds:1660576076",
   "Location": {

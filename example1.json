@@ -6,7 +6,7 @@
   },
   "Tower": "192.168.103.1",
   "SensorType": "internal_conditions",
-  "Measurement": [
+  "Reading": [
     {
       "Name": "temperature",
       "Value": "89.780000",

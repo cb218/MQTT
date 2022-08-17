@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/url"
 	"os"
-	//"github.com/eclipse/paho.mqtt.golang"
+	//"github.com/eclipse/paho.mqtt.golang" //cannot get this to import
 )
 
 func (mqtt *MQTT5) connect() {
@@ -41,8 +41,4 @@ func (mqtt *MQTT5) connect() {
 		log.Error("Connection failed ", err)
 		os.Exit(-1)
 	}
-}
-
-func main() {
-	connect()
 }
