@@ -17,7 +17,7 @@ type MQTT5 struct {
 	cm        *autopaho.ConnectionManager
 }
 
-func (mqtt *MQTT5) connect() {
+func (mqtt *MQTT5) Connect() {
 	parsedURL, e := url.Parse(mqtt.serverURL)
 	if e != nil {
 		log.Fatal("MQTT URL parse failed: ", e)
@@ -50,4 +50,11 @@ func (mqtt *MQTT5) connect() {
 		fmt.Println("Connection failed ", err)
 		os.Exit(-1)
 	}
+	fmt.Println("Connected to ", parsedURL)
+}
+
+func main() {
+	mqtt := MQTT5{}
+	mqtt.serverURL = "broker.emqx.io"
+	mqtt.Connect()
 }

@@ -4,7 +4,7 @@
     "Latitude": "32.600240",
     "Longitude": "-106.753600"
   },
-  "Tower": "192.168.103.1",
+  "Tower": "123.456.789.0",
   "SensorType": "internal_conditions",
   "Measurement": [
     {

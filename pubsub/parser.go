@@ -1,9 +1,8 @@
-package main
+package pubsub
 
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"strconv"
 	"strings"
 	"time"
@@ -27,13 +26,9 @@ type Location struct {
 	Longitude string `json:"long"`
 }
 
-func Parse(file string) {
+func Parse(data []byte) {
 	var message Message
-	data, err := ioutil.ReadFile(file)
-	if err != nil {
-		fmt.Println(err)
-	}
-	err = json.Unmarshal(data, &message)
+	err := json.Unmarshal(data, &message)
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -52,8 +47,4 @@ func Parse(file string) {
 		}
 	}
 	fmt.Printf("Tower: %s, Temperature: %s, Time %s", tower, temperature, timestamp)
-}
-
-func main() {
-	Parse("example.json")
 }
